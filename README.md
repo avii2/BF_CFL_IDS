@@ -11,7 +11,7 @@ for easy inspection.
 
 ```
 core_fed_cluster/
-├── model.py                 # Simple MLP used by every cluster
+├── model.py                
 ├── data_utils.py            # CSV loader shared by clients + evaluators
 ├── fl/
 │   ├── client.py            # Client wrapper: load shard, per-cluster training for IFCA
