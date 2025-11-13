@@ -232,16 +232,19 @@ def save_metrics_plot(metrics_list: Sequence[Dict[str, float]], path: Path) -> b
     roc_aucs = [entry["metrics"]["roc_auc"] for entry in metrics_list]
     accuracies = [entry["metrics"]["accuracy"] for entry in metrics_list]
 
+    x = range(len(labels))
     fig, axes = plt.subplots(1, 2, figsize=(10, 4))
-    axes[0].bar(labels, roc_aucs, color="#4C72B0")
+    axes[0].plot(x, roc_aucs, marker="o", linestyle="--", color="#4C72B0")
     axes[0].set_title("ROC-AUC")
+    axes[0].set_xticks(x)
+    axes[0].set_xticklabels(labels, rotation=30)
     axes[0].set_ylim(0, 1)
-    axes[0].tick_params(axis="x", rotation=30)
 
-    axes[1].bar(labels, accuracies, color="#55A868")
+    axes[1].plot(x, accuracies, marker="o", linestyle="--", color="#55A868")
     axes[1].set_title("Accuracy")
+    axes[1].set_xticks(x)
+    axes[1].set_xticklabels(labels, rotation=30)
     axes[1].set_ylim(0, 1)
-    axes[1].tick_params(axis="x", rotation=30)
 
     fig.suptitle("Cluster vs Global Performance")
     fig.tight_layout()
