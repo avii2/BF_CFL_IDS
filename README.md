@@ -1,4 +1,4 @@
-# Core Federated Cluster Demo
+# blockchain empowered clustered federeated learning itrusion detection system 
 
 This repo contains a lightweight clustered federated learning (IFCA-inspired) simulation
 paired with a lightweight model ledger. Models are trained on per-client normal-only traffic
