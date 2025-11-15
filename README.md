@@ -48,8 +48,10 @@ We happily welcome pull requests, feature ideas, and bug reports!
   * Balanced dataset generation / preprocessing scripts  
   * Hardening the model-ledger for production (IPFS, L2, etc.)
 
+Feel Free to reachout to me Gmail : anilkumarbarupal.01@gmail.com
+
+
 Project is released under the **IIT License**—have fun hacking! 🚀
 
-Feel Free to reachout to me Gmail : anilkumarbarupal.01@gmail.com
 
 
